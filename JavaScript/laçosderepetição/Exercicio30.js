@@ -1,7 +1,8 @@
 
 function acharLetra(frase, letra) {
-    let a = frase.indexOf(letra);
-    return a;
+    for (let i in frase) {
+        if (frase[i] === letra) return i;
+    }
 }
 
-console.log(acharLetra("lucas", "a"));
+console.log(acharLetra("Bora programar", "a"));
